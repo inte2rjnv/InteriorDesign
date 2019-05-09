@@ -5,15 +5,23 @@ $(function(){
 		if($(window).scrollTop() > 100){
 			$(".navList").addClass('navBorder');
 			$(".bg1").addClass('nav1');
-
+			$(".logo img").css({
+				width:'100px',
+				height:'auto',
+				marginTop:'3px'
+			});
 			$(".contact").css("margin-top","10px");
-
+			$(".hamburg").css("margin-top","-40px")
 		}else{
 			$(".navList").removeClass("navBorder");
 			$(".bg1").removeClass('nav1');
-
+			$(".logo img").css({
+				width:'',
+				height:'',
+				marginTop:''
+			});
 			$(".contact").css("margin-top","");
-
+			$(".hamburg").css("margin-top","")
 			
 		}
 	});
